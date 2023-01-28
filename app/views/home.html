@@ -1,0 +1,89 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Матириал-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="../../public/css/material.indigo-deep_purple.min.css" type="text/css">
+<script src="../../public/js/material.min.js"></script>
+
+<!--Общие скрипты-->
+<script src="../../public/js/commonScripts.js"></script>
+
+<style type="text/css">
+    .mdl-card__supporting-text p {
+        text-align: justify;
+    }
+
+    .mdl-mega-footer {
+        padding: 16px 40px;
+        color: #9e9e9e;
+        background-color: #fafafa;
+        position: relative;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    }
+</style>
+
+<div class="mdl-grid" style="max-width: 1080px">
+    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Описание</h2>
+        </div>
+        <div class="mdl-card__media">
+            <img src="../../public/img/crypt.webp" alt="Изображение шифрования"
+                 style="width: 100%; height: auto;"
+            >
+        </div>
+        <div class="mdl-card__supporting-text no-padding">
+            <p>В криптографии шифрование - это процесс кодирования сообщения или информации таким образом,
+                что
+                только авторизованные стороны могут получить к нему доступ, а те, кто не авторизован, не
+                могут.
+                Шифрование само по себе не предотвращает помехи, но отрицает понятное содержимое
+                потенциальному
+                перехватчику. В схеме шифрования предполагаемая информация или сообщение, называемое
+                открытым
+                текстом, шифруется с помощью алгоритма шифрования - шифровального зашифрованного текста,
+                который
+                может быть прочитан только при расшифровке. По техническим причинам схема шифрования обычно
+                использует псевдослучайный ключ шифрования, сгенерированный алгоритмом. Расшифровать
+                сообщение в
+                принципе можно без ключа, но для хорошо продуманной схемы шифрования требуются значительные
+                вычислительные ресурсы и навыки. Авторизованный получатель может легко расшифровать
+                сообщение с
+                помощью ключа, предоставленного отправителем получателям, но не неавторизованным
+                пользователям.
+            </p>
+            <p>
+                В схемах симметричного ключа ключи шифрования и дешифрования одинаковы. Сообщающиеся стороны
+                должны иметь один и тот же ключ для обеспечения безопасной связи.
+            </p>
+            <p>
+                Схемы шифрования с открытым ключом ключ шифрования публикуется для всех, кто использует и
+                шифрует сообщения. Однако только получающая сторона имеет доступ к ключу расшифровки,
+                который
+                позволяет читать сообщения. Шифрование с открытым ключом было впервые описано в секретном
+                документе в 1973 году; до этого все схемы шифрования были симметричными ключами (также
+                называемыми закрытыми ключами).
+            </p>
+        </div>
+
+        <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="checkSupportPWA()">
+                Проверка поддержки PWA
+            </a>
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="checkPWA()">
+                Проверка PWA
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer class="mdl-mega-footer">
+    <div style="margin: 0 auto; width: 160px">
+            <span class="crypt-title mdl-layout-title">
+                 <p class="mdl-typography--font-light">Created by </p>
+               <img src="../../public/img/amb_tor.webp" alt="футер">
+            </span>
+    </div>
+</footer>
